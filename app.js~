@@ -1,7 +1,7 @@
 var express = require('express'),
 	app = express();
-  app.use(express.static(__dirname + '/public'));
-app.set('views', __dirname + '/views');
+app.use(express.static(__dirname + '/public'));
+app.set('views', __dirname + '/views/www');
 var expressHbs = require('express3-handlebars');
 app.engine('hbs', expressHbs({extname:'hbs'}));
 app.set('view engine', 'hbs');
